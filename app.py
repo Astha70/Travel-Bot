@@ -10,7 +10,7 @@ GEM_API_KEY = st.secrets["GEM_API_KEY"]
 genai.configure(api_key=GEM_API_KEY)
 
 # Unsplash API setup
-UNSPLASH_KEY = st.secrets["UNSPLASH_KEY"]
+UNSPLASH_API_KEY = st.secrets["UNSPLASH_KEY"]
 UNSPLASH_BASE_URL = "https://api.unsplash.com/search/photos"
 
 def clean_heading(heading):
