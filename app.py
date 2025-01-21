@@ -6,12 +6,11 @@ import re
 from dotenv import load_dotenv
 
 load_dotenv()
-# Set up Google Gemini API key
-GEM_API_KEY = os.getenv("GEM_API_KEY")
+GEM_API_KEY = st.secrets["GEM_API_KEY"]
 genai.configure(api_key=GEM_API_KEY)
 
 # Unsplash API setup
-UNSPLASH_API_KEY = os.getenv('UNSPLASH_KEY')
+UNSPLASH_KEY = st.secrets["UNSPLASH_KEY"]
 UNSPLASH_BASE_URL = "https://api.unsplash.com/search/photos"
 
 def clean_heading(heading):
